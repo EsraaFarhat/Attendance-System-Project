@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
+    <link href="../CSS_files/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS_files/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS_files/Home.css" />
+    <script src="../JS_files/Home.js"></script>
+</head>
+<body>
+    <div class="container jumbotron align-items-center col-md-6">
+        <h2 class="align-middle">Login to our site</h2>
+        <form class="needs-validation" method="get" novalidate>
+            <div class="col-md-12 mb-4" >
+                <input type="text" class="form-control mt-2" id="username" pattern="[A-Za-z0-9]{3,}" placeholder="User Name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Wrong user name!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <input type="password" class="form-control" id="password" pattern=".{3,}" placeholder="Password" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Wrong password!
+                </div>
+            </div>
+            
+            <div id="buttons">
+            <button class="btn btn-primary mt-4 col-md-6 " type="submit">login</button>
+            </div>
+            <div class=" row justify-content-around mt-3"> 
+                <p>Don't have an account? <a href="Register.html">Register</a></p>
+            </div>
+        </form>
+        
+        
+    </div>
+
+    
+    <script src="../JS_files/JQuery-3.3.1.min.js"></script>
+    <script src="../JS_files/popper.js"></script>
+    <script src="../JS_files/bootstrap.js"></script>
+</body>
+</html>

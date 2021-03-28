@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration page</title>
+    <link href="../CSS_files/bootstrap.css" rel="stylesheet" />
+    <link href="../CSS_files/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS_files/Register.css"/>
+    <script src="../JS_files/Register.js"></script>
+</head>
+<body>
+    <div class="container jumbotron align-items-center col-md-6">
+        <h2 class="align-middle">Register with us</h2>
+        <form class="needs-validation" method="get" novalidate>
+            <div class="col-md-12 mb-3" >
+                <input type="text" class="form-control mt-2" id="fname" name="fname" pattern="[A-Za-z]{3,}" placeholder="First name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Name should be only Capital or Small letters and not less than 3 charachters!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <input type="text" class="form-control" id="lname" name="lname" pattern="[A-Za-z]{3,}" placeholder="Last name" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Name should be only Capital or Small letters and not less than 3 charachters!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    This field is required!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                     Invalid Email! 
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <input type="text" class="form-control" id="age" name="age" pattern="[0-9]{1,2}" placeholder="Age" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Age should be 1 or 2 numbers!
+                </div>
+            </div >
+            <div id="buttons">
+            <button class="btn btn-primary mt-4 col-4 " type="submit">Submit</button>
+            <button class="btn btn-primary mt-4 offset-1 col-4" type="reset">Reset</button>
+        </div> 
+        </form>
+    </div>
+      
+
+    
+    <script src="../JS_files/JQuery-3.3.1.min.js"></script>
+    <script src="../JS_files/popper.js"></script>
+    <script src="../JS_files/bootstrap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    
+</body>
+</html>

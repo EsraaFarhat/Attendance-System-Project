@@ -1,0 +1,39 @@
+body{
+    position: relative;
+    background-color: rgb(236, 235, 235);
+}
+.jumbotron{
+    background-color: rgb(236, 235, 235);
+    margin-top: -40px; 
+}
+
+#personalData,#reports{
+    margin-top: 20px;
+    /* margin-left: 50px; */
+}
+#personalData{
+    font-size: 20px;
+}
+.report td, .report th{
+    text-align: center;
+    height: 50px;
+    background-color: rgb(207, 206, 206);
+}
+.report th{
+    background-color: #187D99;
+    color: white;
+}
+td:nth-child(even){
+    text-align: left;
+}
+ul.navbar-nav li.nav-item #profile {
+    color: #76c5db !important;
+    font-size: 20px;
+} 
+ul.navbar-nav li.nav-item a {
+    color: white !important;
+    font-size: 18px;
+} 
+ul.navbar-nav li.nav-item a[tabindex]:focus{
+    color: yellow !important;
+}

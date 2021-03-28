@@ -1,0 +1,34 @@
+body{
+    opacity: 0.9;
+    background: -webkit-radial-gradient(right, rgb(214, 214, 214) 50%,rgb(163, 221, 248));
+}
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron{
+    margin-top: 50px;
+    background-color:rgb(66, 68, 66) ;
+    border-radius: 10px;
+    width: 60%;
+}
+ul.navbar-nav li.nav-item a {
+    color: white !important;
+    font-size: 20px;
+} 
+ul.navbar-nav li.nav-item a[tabindex]:focus{
+    color: yellow !important;
+}
+#buttons{
+    text-align: center;
+}
+input{
+    height: 50px;
+}
+img{
+  margin-left: 10px;
+  margin-top: -15px;
+  width: 250px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin </title>
+    <!-- <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/font-awesome.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS_files/Admin.css">
+    <script src="../JS_files/Admin.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-12 col-md-10" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link ml-2" id = "profile" href="#"><b>Admin Panel</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ml-4" tabindex="1" value="all" href="#" onclick="getAll();">All Employees</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link ml-4" tabindex="2" href="#" onclick="getFullReport();">Full report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-4" tabindex="3" href="#" onclick="getLateReport();">Late report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-4" tabindex="4" href="#" onclick="getExcuseReport();">Excuse report</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-4" tabindex="5" href="#" onclick="getEmployessData();">Employee brief</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ml-4" tabindex="6" href="#" onclick="Requests();">Requests</a>
+              </li>
+          </ul>
+        </div>   
+            <div class=" collapse navbar-collapse ml-3" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link ml-4 mr-md-5 " tabindex="7" href="#" onclick="logout();">Logout</a>
+            </li>
+          </ul>
+        </div>  
+      </nav>
+    <div class="row" id="searchdiv">
+      <nav class="navbar navbar-light mt-4 mb-4 mb-md-2 ml-2 ml-md-5">
+        <form class="form-inline mt-4 ml-md-2" method="GET">
+          <input class="form-control col-7 ml-3" type="text" id= "selectMonth" placeholder="Select a month...">
+          <button class="btn btn-info col-4 ml-1" type="submit" id="search" onclick="searchfun(event);">Search</button>
+        </form>
+      </nav>
+        <div class="container jumbotron ml-1 col-11">
+           
+                <section class="table-responsive col-12 ml-md-5" id="reports">
+                    
+                    
+                </section>
+        </div>
+    
+    </div>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>

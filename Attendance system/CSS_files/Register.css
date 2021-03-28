@@ -1,0 +1,30 @@
+body{
+    padding-top:20px;
+    background-image: url(../Images/1.jpg);
+}
+h2{
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron{
+    background-color:rgb(43, 44, 43) ;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+input{
+    height: 50px;
+}
+#buttons{
+    text-align: center;
+}
+.valid-feedback, .invalid-feedback{
+    font-size: medium;
+}
+.valid-feedback{
+    color: green;
+}
+.invalid-feedback{
+    color: red;
+}
